@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login page</title>
+    <style>
+    body{
+        background-color: #f6f6f6;
+	font-family: "century gothic";}
+
+form {
+    width: 45%;
+    padding: 20px; 
+    border: 1px solid #077a39; 
+    border-radius: 5px;}
+
+form:hover {
+	transition: 1s;
+    width: 35%;
+    border: 2px solid #077a39; 
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);}
+
+h1{	color: #077a39;}
+hr{color:#077a39;  width: 45%;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.4); }
+.hrr{width:40%;}
+
+button{
+		color: white;
+		box-sizing: border-box;
+		border: 3px solid #077a39;
+		background-color: #077a39;
+		border-radius: 10px;
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+		/*width: 10%;*/
+		height: 30px;
+		font-size: 110%;
+		margin:5px 0px;  }
+
+input{
+		text-align: center;
+		width: 70%;
+		height: 30px;
+		border-radius: 10px;
+		line-height: 30px;
+		font-size: 105%;
+		/*color: green;*/
+		box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+		border:2px solid #077a39;
+		margin: 10px 0 10px 0; }
+
+input:hover{
+	border:2px solid #095a8a;
+	transition: 1s;
+}
+label{
+	font-size: 102%;
+}
+
+label{
+	display: block;
+}
+*[type=submit]{
+	width: 40%; }
+
+*[type=submit]:hover{
+	font-size: 130%;
+	width: 50%;
+	height: 40px;
+border:1px solid #095a8a;
+background-color: black;
+border-radius: 20px;
+color: white; }
+
+@media screen and (max-width: 450px){
+	input{ width: 85%; }
+	input:hover{ border:2px solid #095a8a; transition: 1.5s; }
+	*[type=submit]{	width: 40%; }
+	hr{color:#077a39;  width: 85%; }
+
+	form {
+    width: 85%;
+    padding: 20px; 
+    border: 1px solid  #077a39 ; 
+    border-radius: 5px;}
+
+    form:hover {
+	transition: 1s;
+    width: 70%;
+    border: 2px solid #077a39; 
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);}	
+}
+
+@media screen and (min-width: 760px ) and (max-width: 1024px){
+	input{ 	width: 50%; }
+	*[type=submit]{	width: 50%; }
+	hr{color:#077a39;  width: 70%; }
+    .hrr{width:65%; }
+	form {
+    width: 70%;
+    padding: 20px; 
+    border: 1px solid #077a39; 
+    border-radius: 5px;}
+
+    form:hover {
+	transition: 1s;
+    width: 60%;
+    border: 2px solid #077a39; 
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);}	
+} 
+
+}
+    
+    </style>
+</head>
+<body>
+	<center>
+	   <h1>LOGIN PAGE</h1>
+	   <form action="visit.php" method="POST">
+		  <label >Username</label><input type="text" name="user">
+		  <label>Password</label><input type="password" name="password"><br>
+			<button type="submit">Login</button>			
+		</form> <br> <hr><hr class="hrr"">
+		<div> <button>Forget password?</button>&nbsp; &nbsp;<button>Sign up</button>  </div>
+			
+
+	</center>
+</body>
+</html>
